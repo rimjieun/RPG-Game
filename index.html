@@ -5,30 +5,56 @@
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 	<title>Rim | RPG Game</title>
 </head>
 <body>
 
-<h1>Star Wars RPG!</h1>
-
-<div class="characters">
-	<button type="button">Character 1</button>
-	<button type="button">Character 2</button>
-	<button type="button">Character 3</button>
-	<button type="button">Character 4</button>
+<div id="heading">
+	<h1>Star Wars RPG!</h1>
 </div>
 
-<p>Your Character</p>
-<div id="chosenCharacter" class="characters"></div>
+<div id="characterList" class="characterSection">
+	<div id="character1" class="characters">
+		<p>Obi-Wan Kenobi</p>
+		<img src="assets/images/obi-wan-kenobi.jpg" alt="Obi-Wan Kenobi" height="100px" width="150">
+		<p class="healthPoints"></p>
+	</div>
+	<div id="character2" class="characters">
+		<p>Luke Skywalker</p>
+		<img src="assets/images/luke-skywalker.jpg" alt="Luke Skywalker" height="100" width="150">
+		<p class="healthPoints"></p>
+	</div>
+	<div id="character3" class="characters">
+		<p>Darth Sidious</p>
+		<img src="assets/images/darth-sidious.png" alt="Darth Sidious" height="100" width="150">
+		<p class="healthPoints"></p>
+	</div>
+	<div id="character4" class="characters">
+		<p>Darth Maul</p>
+		<img src="assets/images/darth-maul.jpeg" alt="Darth Maul" height="100" width="150">
+		<p class="healthPoints"></p>
+	</div>
+</div>
 
-<p>Enemies Available to Attack</p>
-<div id="availableEnemies" class="characters"></div>
+<div id="yourCharacter" class="characterSection">
+	<h2>Your Character</h2>
+</div>
 
-<p>Fight Section</p>
-<button type="button">Attack</button>
+<div id="enemiesAvailable" class="characterSection">
+	<h2>Enemies Available To Attack</h2>
+</div>
 
-<p>Defender</p>
-<div id="chosenEnemey" class="characters"></div>
+<div id="fightSection">
+	<h2>Fight Section</h2>
+	<button id="attackButton" type="button">Attack</button>
+</div>
+
+<div id="defender" class="characterSection">
+	<h2>Defender</h2>
+	<p id="gameProgress"></p>
+
+</div>
 
 
 </body>

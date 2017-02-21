@@ -1,5 +1,56 @@
+body {
+	font-family: 'Source Code Pro', monospace;
+	background: url(../images/background.jpg);
+	background-size: cover;
+	color: #ffffff;
+}
+
+img {
+	width: 120px;
+	height: 70px;
+	padding: 0 10px;
+	
+	
+}
+
+#heading {
+	line-height: 0;
+	float: left;
+	width: 100%;
+	background: blue;
+}
+
+
+
 .characters {
-	width: 500px;
-	height: 100px;
-	background: red;
+	display: inline-block;
+	background: orange;
+	text-align: center;
+	line-height: 0;
+	border: 3px solid green;
+	float: left;
+}
+
+p {
+	font-size: 12px;
+}
+
+.characterSection {
+	width: 100%;
+	float: left;
+	background: blue;
+	border: 3px solid yellow;
+	height: 160px;
+	line-height: 0;
+	position: relative;
+}
+
+#fightSection {
+	line-height: 0;
+	float: left;
+}
+
+#gameProgress {
+	position: absolute;
+	bottom: 0;
 }
