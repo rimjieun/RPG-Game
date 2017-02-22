@@ -32,16 +32,21 @@ function startGame() {
 	$("#character4 > .healthPoints").html(character4.healthPoints);
 
 	$(".characters").on("click", function() {
-		$("#yourCharacter").append(this);
-		if ($("#yourCharacter > div").hasClass("characters")) {
-			$("#characterList").appendTo("#enemiesAvailable");
+		if (locked === false) {
+			$(this).appendTo("#yourCharacter");
+			if ($("#yourCharacter > div").hasClass("characters")) {
+				$("#characterList").appendTo("#enemiesAvailable");
+			}
 			locked = true;
 		}
-
-		
-
+		else if ((locked === true) && !($("#defender > div").hasClass("characters"))) {
+			$(this).appendTo("#defender");
+		}
 	})
 
+	function attack() {
+		
+	}
 
 	$("#attackButton").on("click", function() {
 		if ($("#defender > div").hasClass("characters")) {
