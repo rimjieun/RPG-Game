@@ -13,11 +13,16 @@ img {
 	
 }
 
+.image {
+	width: 120px;
+	height: 70px;
+	padding: 0 20px 0 5px;
+}
+
 #heading {
 	line-height: 0;
 	float: left;
 	width: 100%;
-	background: blue;
 }
 
 
@@ -38,9 +43,6 @@ p {
 .characterSection {
 	width: 100%;
 	float: left;
-	background: blue;
-	border: 3px solid yellow;
-	/*height: 120px;*/
 	line-height: 0;
 	position: relative;
 }
@@ -51,7 +53,12 @@ p {
 }
 
 #gameProgress {
-	position: absolute;
-	bottom: 0;
+	color: #ffffff;
+	float: left;
+
+}
+
+#defender {
+	height: 160px;
 }
 

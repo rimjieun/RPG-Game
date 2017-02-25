@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<!-- reset is acting weird -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
 	<title>Rim | RPG Game</title>
 </head>
 <body>
@@ -17,18 +18,22 @@
 <div id="characterList" class="characterSection">
 	<div id="character1" class="characters">
 		<p class="name"></p>
+		<p class="image"></p>
 		<p class="healthPoints"></p>
 	</div>
 	<div id="character2" class="characters">
 		<p class="name"></p>
+		<p class="image"></p>
 		<p class="healthPoints"></p>
 	</div>
 	<div id="character3" class="characters">
 		<p class="name"></p>
+		<p class="image"></p>
 		<p class="healthPoints"></p>
 	</div>
 	<div id="character4" class="characters">
 		<p class="name"></p>
+		<p class="image"></p>
 		<p class="healthPoints"></p>
 	</div>
 </div>
@@ -48,9 +53,13 @@
 
 <div id="defender" class="characterSection">
 	<h2>Defender</h2>
-	<p id="gameProgress1"></p>
-	<p id="gameProgress2"></p>
+	
 </div>
+<div id="gameProgress">
+	<p id="line1"></p>
+	<p id="line2"></p>
+</div>
+
 
 
 </body>
